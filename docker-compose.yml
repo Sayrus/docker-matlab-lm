@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+ mathworks:
+    build:
+      context: .
+      args:
+       - KEY=XXXXX-XXXXX-XXXXX-XXXXX
+    hostname: localhost
+    mac_address: 00:00:00:00:00:01
+    ports:
+     - "27000:27000"
+     - "1711:1711"
